@@ -63,6 +63,8 @@ func main() {
 
 	result := optimize.Optimize(fitnessProvider(predicates), b)
 
-	fmt.Println(result, fitnessProvider(predicates)(result))
+	satisfied := fitnessProvider(predicates)(result)
+	fmt.Println(result, satisfied)
 	fmt.Println(bitstringToBoolSlice(result.Get("A")))
+	fmt.Println("Out of", len(predicates), "predicates,", satisfied, "are satisfied.")
 }
