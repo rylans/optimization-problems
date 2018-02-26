@@ -12,6 +12,8 @@ where n is the number of items.
 
 * MAX-SAT is the problem of determining the maximum number of clauses that boolean formula can satisfy. MAX-SAT is NP-hard
 
-### Function Optimization
+### Bounded Function Optimization
 
-* One-dimensional function optimization bounded between a certain input range
+* One-dimensional function optimization
+* Two-dimensional function optimization
+
